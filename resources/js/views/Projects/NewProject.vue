@@ -81,7 +81,7 @@
                                     />
                                 </div>
                                 <div class="form-group input-symbol-euro">
-                                    
+
                                     <input
                                         type="number"
                                         placeholder="Budget"
@@ -89,7 +89,7 @@
                                         v-model="budget"
                                         id="budget"
                                     />
-                                    
+
                                     <small
                                         >Essentially digital projects vary
                                         massively in their complexity - Your
@@ -176,11 +176,11 @@ export default {
 
             if(!this.business_name){
                 this.businessNameError = true
-                return 
+                return
             }else{
                 this.businessNameError = false
             }
-            
+
                 this.selectCategory = false;
                 var data = {
                     category: JSON.stringify(this.category),
@@ -196,7 +196,7 @@ export default {
                 this.projects.push(response.data.project);
 
                 $("#newProject").modal("hide");
-            
+
         },
         async getCategories() {
             let response = await UserService.Get("project/categories");
