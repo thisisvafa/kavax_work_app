@@ -251,7 +251,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
 
 
  // optional style for arrows & dots
@@ -1572,8 +1571,7 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "modal modal-lg fade",
-      staticStyle: { position: "absolute", height: "750px" },
+      staticClass: "modal fade",
       attrs: {
         id: "newBooking",
         tabindex: "-1",

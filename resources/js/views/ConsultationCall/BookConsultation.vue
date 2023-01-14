@@ -1,12 +1,11 @@
 <template>
     <div
-        class="modal modal-lg fade"
+        class="modal fade"
         id="newBooking"
         tabindex="-1"
         role="dialog"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
-        style="position: absolute;height: 750px;"
     >
         <div class="modal-dialog " role="document">
             <div class="modal-content">
