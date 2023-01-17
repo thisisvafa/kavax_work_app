@@ -863,7 +863,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 vue__WEBPACK_IMPORTED_MODULE_5__["default"].use(vue_axios__WEBPACK_IMPORTED_MODULE_3__["default"], (axios__WEBPACK_IMPORTED_MODULE_2___default()));
 vue__WEBPACK_IMPORTED_MODULE_5__["default"].use((vue_notification__WEBPACK_IMPORTED_MODULE_4___default()));
-var baseURL = "http://127.0.0.1:8080/api/";
+var baseURL = "http://kavax.co.uk/app/api/";
 var Api = vue__WEBPACK_IMPORTED_MODULE_5__["default"].axios.create({
   // baseURL: "https://kavax.co.uk/app/api/", //process.env.MIX_API_URL,
   baseURL: "http://127.0.0.1:8080/app/api/",
@@ -1154,7 +1154,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.appoint-box[data-v-6ba467ef] {\n    border: 1px solid #fff;\n    text-align: center;\n}\n.card .card-header[data-v-6ba467ef] {\n    background-color: #23222000;\n    border: none;\n    padding: 0rem;\n    margin-top: 20px;\n    padding-top: 20px;\n    border-top: 1px solid #74726f;\n}\n.dark-theme .card[data-v-6ba467ef] {\n    background: transparent !important;\n    border: none;\n    box-shadow: none;\n}\n.card .card-body[data-v-6ba467ef] {\n    padding: 24px 0px;\n}\ninput[type=\"radio\"][data-v-6ba467ef] {\n    display: none;\n}\n:checked + label[data-v-6ba467ef] {\n    border-top: 2px solid #e29826 !important;\n    border-left: 2px solid #e29826 !important;\n    border-right: 2px solid #e29826 !important;\n    border-bottom: 2px solid #e29826 !important;\n    background-color: #332f2a;\n    padding: 0px 15px 0px 15px;\n    margin-bottom: -15px;\n    /* color: #e29826; */\n}\n:checked + label[data-v-6ba467ef]:before {\n    content: \"\\2714\"; /*   \"✓\";*/\n    background-color: #e29826;\n    transform: scale(1);\n    /* border: 1px solid #e29826; */\n    margin: auto -16px -21px auto;\n    color: #fff;\n    width: 20px;\n    height: 20px;\n    text-align: center;\n}\n.project-bg[data-v-6ba467ef],\n.card-header[data-v-6ba467ef] {\n    background-color: #232220;\n}\n.project-bg.col-lg-6[data-v-6ba467ef], .project-bg.col-md-6[data-v-6ba467ef], .project-bg.col-sm-12[data-v-6ba467ef] {\n    padding-left: 0px;\n    padding-right: 0px;\n    margin-bottom: 0px;\n}\n.project-bg label[data-v-6ba467ef] {\n    padding: 0px 15px 0px 15px;\n    margin-bottom: 0px;\n    height: 100%;\n}\n.project-bg[data-v-6ba467ef]:hover {\n    border: 1px solid #74726f;\n}\n.card-footer[data-v-6ba467ef] {\n    border-top: none;\n    padding-left: 0px;\n}\n.list-inline li[data-v-6ba467ef] {\n    padding: 10px;\n}\n.progress[data-v-6ba467ef] {\n    background-color: #00000000;\n    border: 1px solid #068d50;\n}\n.card-link[data-v-6ba467ef] {\n    color: #e29826;\n}\n.card-link[data-v-6ba467ef]:hover {\n    color: #fff;\n}\n.table-holder[data-v-6ba467ef],\n.table-responsive[data-v-6ba467ef] {\n    position: relative;\n}\n.table-responsive[data-v-6ba467ef]::-webkit-scrollbar {\n    height: 10px;\n}\n.table-responsive[data-v-6ba467ef]::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 6px #333333;\n    -webkit-box-shadow: inset 0 0 6px #333333;\n}\n.table-responsive[data-v-6ba467ef]::-webkit-scrollbar-thumb {\n    background: #333333;\n    outline: 1px solid #333333;\n}\n.info[data-v-6ba467ef] {\n    position: absolute;\n    width: 200px;\n    height: 100%;\n    /* background: linear-gradient(to right, transparent, #ffffff); */\n    top: 0;\n    right: 0;\n    padding: 20px;\n    text-align: right;\n    font-weight: bold;\n    display: flex;\n    align-items: center;\n    justify-content: flex-end;\n    transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;\n    opacity: 0;\n    visibility: hidden;\n    z-index: 1;\n    pointer-events: none;\n}\n.show[data-v-6ba467ef] {\n    opacity: 1;\n    visibility: visible;\n}\ntr th[data-v-6ba467ef],\ntr td[data-v-6ba467ef] {\n    min-width: 50px;\n    left: 0;\n    background: rgba(37, 36, 36, 0.8);\n}\ntr th[data-v-6ba467ef]:first-child,\ntr td[data-v-6ba467ef]:first-child {\n    position: -webkit-sticky;\n    position: sticky;\n    min-width: 50px;\n    left: 0;\n    background: rgba(37, 36, 36, 0.9);\n}\n.dark-theme .btn-outline-light[data-v-6ba467ef] {\n    color: #fff;\n}\n.dark-theme .btn-outline-light[data-v-6ba467ef]:hover {\n    color: #e29826;\n    border-color: #e29826;\n    background: none;\n}\n.card-body h3[data-v-6ba467ef] {\n    word-break: break-word;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n@media (max-width:575px) {\n.project_process[data-v-6ba467ef] {\n        right: 22px;\n}\n}\n.appoint-box[data-v-6ba467ef] {\n    border: 1px solid #fff;\n    text-align: center;\n}\n.card .card-header[data-v-6ba467ef] {\n    background-color: #23222000;\n    border: none;\n    padding: 0rem;\n    margin-top: 20px;\n    padding-top: 20px;\n    border-top: 1px solid #74726f;\n}\n.dark-theme .card[data-v-6ba467ef] {\n    background: transparent !important;\n    border: none;\n    box-shadow: none;\n}\n.card .card-body[data-v-6ba467ef] {\n    padding: 24px 0px;\n}\ninput[type=\"radio\"][data-v-6ba467ef] {\n    display: none;\n}\n:checked + label[data-v-6ba467ef] {\n    border-top: 2px solid #e29826 !important;\n    border-left: 2px solid #e29826 !important;\n    border-right: 2px solid #e29826 !important;\n    border-bottom: 2px solid #e29826 !important;\n    background-color: #332f2a;\n    padding: 0px 15px 0px 15px;\n    margin-bottom: -15px;\n    /* color: #e29826; */\n}\n:checked + label[data-v-6ba467ef]:before {\n    content: \"\\2714\"; /*   \"✓\";*/\n    background-color: #e29826;\n    transform: scale(1);\n    /* border: 1px solid #e29826; */\n    margin: auto -16px -21px auto;\n    color: #fff;\n    width: 20px;\n    height: 20px;\n    text-align: center;\n}\n.project-bg[data-v-6ba467ef],\n.card-header[data-v-6ba467ef] {\n    background-color: #232220;\n}\n.project-bg.col-lg-6[data-v-6ba467ef], .project-bg.col-md-6[data-v-6ba467ef], .project-bg.col-sm-12[data-v-6ba467ef] {\n    padding-left: 0px;\n    padding-right: 0px;\n    margin-bottom: 0px;\n}\n.project-bg label[data-v-6ba467ef] {\n    padding: 0px 15px 0px 15px;\n    margin-bottom: 0px;\n    height: 100%;\n}\n.project-bg[data-v-6ba467ef]:hover {\n    border: 1px solid #74726f;\n}\n.card-footer[data-v-6ba467ef] {\n    border-top: none;\n    padding-left: 0px;\n}\n.list-inline li[data-v-6ba467ef] {\n    padding: 10px;\n}\n.progress[data-v-6ba467ef] {\n    background-color: #00000000;\n    border: 1px solid #068d50;\n}\n.card-link[data-v-6ba467ef] {\n    color: #e29826;\n}\n.card-link[data-v-6ba467ef]:hover {\n    color: #fff;\n}\n.table-holder[data-v-6ba467ef],\n.table-responsive[data-v-6ba467ef] {\n    position: relative;\n}\n.table-responsive[data-v-6ba467ef]::-webkit-scrollbar {\n    height: 10px;\n}\n.table-responsive[data-v-6ba467ef]::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 6px #333333;\n    -webkit-box-shadow: inset 0 0 6px #333333;\n}\n.table-responsive[data-v-6ba467ef]::-webkit-scrollbar-thumb {\n    background: #333333;\n    outline: 1px solid #333333;\n}\n.info[data-v-6ba467ef] {\n    position: absolute;\n    width: 200px;\n    height: 100%;\n    /* background: linear-gradient(to right, transparent, #ffffff); */\n    top: 0;\n    right: 0;\n    padding: 20px;\n    text-align: right;\n    font-weight: bold;\n    display: flex;\n    align-items: center;\n    justify-content: flex-end;\n    transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;\n    opacity: 0;\n    visibility: hidden;\n    z-index: 1;\n    pointer-events: none;\n}\n.show[data-v-6ba467ef] {\n    opacity: 1;\n    visibility: visible;\n}\ntr th[data-v-6ba467ef],\ntr td[data-v-6ba467ef] {\n    min-width: 50px;\n    left: 0;\n    background: rgba(37, 36, 36, 0.8);\n}\ntr th[data-v-6ba467ef]:first-child,\ntr td[data-v-6ba467ef]:first-child {\n    position: -webkit-sticky;\n    position: sticky;\n    min-width: 50px;\n    left: 0;\n    background: rgba(37, 36, 36, 0.9);\n}\n.dark-theme .btn-outline-light[data-v-6ba467ef] {\n    color: #fff;\n}\n.dark-theme .btn-outline-light[data-v-6ba467ef]:hover {\n    color: #e29826;\n    border-color: #e29826;\n    background: none;\n}\n.card-body h3[data-v-6ba467ef] {\n    word-break: break-word;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1951,7 +1951,7 @@ var render = function() {
                     staticClass: "card-link",
                     attrs: { to: "/consultation/bookings" }
                   },
-                  [_vm._v("See all")]
+                  [_vm._v("Edit / See all")]
                 )
               : _vm._e()
           ],
@@ -2183,78 +2183,88 @@ var render = function() {
                                       )
                                     ]),
                                     _vm._v(" "),
-                                    _c("div", { staticClass: "pt-3 col-4" }, [
-                                      _c(
-                                        "ul",
-                                        {
-                                          staticClass:
-                                            "list-group list-group-horizontal list-unstyled align-middle"
-                                        },
-                                        [
-                                          _c(
-                                            "li",
-                                            [
-                                              _c(
-                                                "VueCustomTooltip",
-                                                {
-                                                  attrs: {
-                                                    label: "Overall progress",
-                                                    position: "is-top"
-                                                  }
-                                                },
-                                                [
-                                                  _c(
-                                                    "div",
-                                                    {
-                                                      staticClass:
-                                                        "progress progress-md mt-2",
-                                                      staticStyle: {
-                                                        width: "100px"
-                                                      }
-                                                    },
-                                                    [
-                                                      _c("div", {
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "pt-3 col-4 project_process"
+                                      },
+                                      [
+                                        _c(
+                                          "ul",
+                                          {
+                                            staticClass:
+                                              "list-group list-group-horizontal list-unstyled align-middle"
+                                          },
+                                          [
+                                            _c(
+                                              "li",
+                                              [
+                                                _c(
+                                                  "VueCustomTooltip",
+                                                  {
+                                                    attrs: {
+                                                      label: "Overall progress",
+                                                      position: "is-top"
+                                                    }
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "div",
+                                                      {
                                                         staticClass:
-                                                          "progress-bar bg-success",
-                                                        style:
-                                                          "width: " +
-                                                          parseInt(
-                                                            project.progress
-                                                          ) +
-                                                          "%",
-                                                        attrs: {
-                                                          role: "progressbar",
-                                                          "aria-valuenow": "5",
-                                                          "aria-valuemin": "0",
-                                                          "aria-valuemax": "100"
+                                                          "progress progress-md mt-2",
+                                                        staticStyle: {
+                                                          width: "100px"
                                                         }
-                                                      })
-                                                    ]
-                                                  )
-                                                ]
-                                              )
-                                            ],
-                                            1
-                                          ),
-                                          _vm._v(" "),
-                                          _c(
-                                            "li",
-                                            {
-                                              staticClass: "ml-1 text-success"
-                                            },
-                                            [
-                                              _c("small", [
-                                                _vm._v(
-                                                  _vm._s(
-                                                    parseInt(project.progress)
-                                                  ) + "%"
+                                                      },
+                                                      [
+                                                        _c("div", {
+                                                          staticClass:
+                                                            "progress-bar bg-success",
+                                                          style:
+                                                            "width: " +
+                                                            parseInt(
+                                                              project.progress
+                                                            ) +
+                                                            "%",
+                                                          attrs: {
+                                                            role: "progressbar",
+                                                            "aria-valuenow":
+                                                              "5",
+                                                            "aria-valuemin":
+                                                              "0",
+                                                            "aria-valuemax":
+                                                              "100"
+                                                          }
+                                                        })
+                                                      ]
+                                                    )
+                                                  ]
                                                 )
-                                              ])
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    ])
+                                              ],
+                                              1
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "li",
+                                              {
+                                                staticClass: "ml-1 text-success"
+                                              },
+                                              [
+                                                _c("small", [
+                                                  _vm._v(
+                                                    _vm._s(
+                                                      parseInt(project.progress)
+                                                    ) + "%"
+                                                  )
+                                                ])
+                                              ]
+                                            )
+                                          ]
+                                        )
+                                      ]
+                                    )
                                   ]
                                 )
                               ])

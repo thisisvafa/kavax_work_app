@@ -3725,7 +3725,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 vue__WEBPACK_IMPORTED_MODULE_5__["default"].use(vue_axios__WEBPACK_IMPORTED_MODULE_2__["default"], (axios__WEBPACK_IMPORTED_MODULE_1___default()));
 vue__WEBPACK_IMPORTED_MODULE_5__["default"].use((vue_notification__WEBPACK_IMPORTED_MODULE_3___default()));
-var apiUrl = "http://127.0.0.1:8080/api/";
+var apiUrl = "http://kavax.co.uk/app/api/";
 
 var AuthService = /*#__PURE__*/function () {
   function AuthService() {
@@ -76614,7 +76614,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "/";
+/******/ 		__webpack_require__.p = "/app/public/";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */

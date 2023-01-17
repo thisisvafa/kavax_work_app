@@ -30,7 +30,7 @@
                     to="/consultation/bookings"
                     class="card-link"
                     v-if="appointments.length > 0"
-                    >See all</router-link
+                    >Edit / See all</router-link
                 >
             </div>
             <div class="card-body">
@@ -157,7 +157,7 @@
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="pt-3 col-4">
+                                    <div class="pt-3 col-4 project_process">
                                         <ul
                                             class="list-group list-group-horizontal list-unstyled align-middle"
                                         >
@@ -390,6 +390,11 @@ export default {
 };
 </script>
 <style scoped>
+@media (max-width:575px) {
+    .project_process {
+        right: 22px;
+    }
+}
 .appoint-box {
     border: 1px solid #fff;
     text-align: center;
