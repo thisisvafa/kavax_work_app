@@ -393,7 +393,14 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
         touchThreshold: 3,
         arrows: true,
         nav: true,
-        swipeToSlide: true
+        swipeToSlide: true,
+        responsive: [{
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        }]
       }
     };
   }
@@ -838,7 +845,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 vue__WEBPACK_IMPORTED_MODULE_5__["default"].use(vue_axios__WEBPACK_IMPORTED_MODULE_3__["default"], (axios__WEBPACK_IMPORTED_MODULE_2___default()));
 vue__WEBPACK_IMPORTED_MODULE_5__["default"].use((vue_notification__WEBPACK_IMPORTED_MODULE_4___default()));
-var baseURL = "http://kavax.co.uk/app/api/";
+var baseURL = "http://127.0.0.1:8080/api/";
 var Api = vue__WEBPACK_IMPORTED_MODULE_5__["default"].axios.create({
   // baseURL: "https://kavax.co.uk/app/api/", //process.env.MIX_API_URL,
   baseURL: "http://127.0.0.1:8080/app/api/",
@@ -1179,7 +1186,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.appoint-box {\n    border: 1px solid #fff;\n    text-align: center;\n}\n.card .card-header {\n    background-color: #23222000;\n    border: none;\n    padding: 0rem;\n    margin-top: 20px;\n    padding-top: 20px;\n    border-top: 1px solid #74726f;\n}\n.dark-theme .btn-outline-light {\n    color: #fff;\n}\n.dark-theme .btn-outline-light:hover {\n    color: #e29826;\n    border-color: #e29826;\n    background: none;\n}\n.v-cal {\n    background-color: transparent !important;\n    color: white !important;\n}\n.v-cal-content .v-cal-weekdays,\n.v-cal-content.v-cal-content--week .v-cal-weekdays,\n.v-cal-content.v-cal-content--day .v-cal-weekdays {\n    background-color: transparent !important;\n    color: #fff;\n}\n.v-cal-content.v-cal-content--month .v-cal-days .v-cal-day {\n    background: transparent !important;\n}\n.v-cal-content .v-cal-event-item {\n    background-color: #e29826;\n}\n.v-cal-content .v-cal-event-item::after {\n    background: none;\n}\n.v-cal-button {\n    background-color: transparent !important;\n    color: #fff;\n}\n.v-cal-button:hover {\n    background-color: transparent !important;\n    color: #e29826;\n}\n.v-cal-button.v-cal-button--is-active {\n    background-color: transparent !important;\n    color: #e29826;\n}\n.v-cal-times {\n    background: transparent !important;\n}\n.v-cal-day {\n    background: transparent !important;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n@media (max-width:575px) {\n.bookCall {\n        position: fixed;\n        bottom: 18px;\n        left: 20px;\n        width: 90%;\n        background-color: #2d2d2d;\n        z-index: 5;\n}\n.bookCall:hover {\n        background-color: #2d2d2d !important;\n}\n}\n.appoint-box {\n    border: 1px solid #fff;\n    text-align: center;\n}\n.card .card-header {\n    background-color: #23222000;\n    border: none;\n    padding: 0rem;\n    margin-top: 20px;\n    padding-top: 20px;\n    border-top: 1px solid #74726f;\n}\n.dark-theme .btn-outline-light {\n    color: #fff;\n}\n.dark-theme .btn-outline-light:hover {\n    color: #e29826;\n    border-color: #e29826;\n    background: none;\n}\n.v-cal {\n    background-color: transparent !important;\n    color: white !important;\n}\n.v-cal-content .v-cal-weekdays,\n.v-cal-content.v-cal-content--week .v-cal-weekdays,\n.v-cal-content.v-cal-content--day .v-cal-weekdays {\n    background-color: transparent !important;\n    color: #fff;\n}\n.v-cal-content.v-cal-content--month .v-cal-days .v-cal-day {\n    background: transparent !important;\n}\n.v-cal-content .v-cal-event-item {\n    background-color: #e29826;\n}\n.v-cal-content .v-cal-event-item::after {\n    background: none;\n}\n.v-cal-button {\n    background-color: transparent !important;\n    color: #fff;\n}\n.v-cal-button:hover {\n    background-color: transparent !important;\n    color: #e29826;\n}\n.v-cal-button.v-cal-button--is-active {\n    background-color: transparent !important;\n    color: #e29826;\n}\n.v-cal-times {\n    background: transparent !important;\n}\n.v-cal-day {\n    background: transparent !important;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2287,7 +2294,7 @@ var staticRenderFns = [
     return _c(
       "button",
       {
-        staticClass: "btn btn-outline-light btn-icon-text",
+        staticClass: "btn btn-outline-light btn-icon-text bookCall",
         attrs: {
           type: "button",
           "data-toggle": "modal",

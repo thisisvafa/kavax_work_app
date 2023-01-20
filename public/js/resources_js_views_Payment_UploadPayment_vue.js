@@ -82,7 +82,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 
 
-var baseURL = "http://kavax.co.uk/app/api/";
+var baseURL = "http://127.0.0.1:8080/api/";
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -186,7 +186,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 vue__WEBPACK_IMPORTED_MODULE_5__["default"].use(vue_axios__WEBPACK_IMPORTED_MODULE_3__["default"], (axios__WEBPACK_IMPORTED_MODULE_2___default()));
 vue__WEBPACK_IMPORTED_MODULE_5__["default"].use((vue_notification__WEBPACK_IMPORTED_MODULE_4___default()));
-var baseURL = "http://kavax.co.uk/app/api/";
+var baseURL = "http://127.0.0.1:8080/api/";
 var Api = vue__WEBPACK_IMPORTED_MODULE_5__["default"].axios.create({
   // baseURL: "https://kavax.co.uk/app/api/", //process.env.MIX_API_URL,
   baseURL: "http://127.0.0.1:8080/app/api/",

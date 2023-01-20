@@ -16,7 +16,7 @@
             <div :class="isMobile() ? 'text-right mt-3' : ''">
                 <button
                     type="button"
-                    class="btn btn-outline-light btn-icon-text"
+                    class="btn btn-outline-light btn-icon-text bookCall"
                     data-toggle="modal"
                     data-target="#newBooking"
                 >
@@ -196,6 +196,19 @@ export default {
 </script>
 
 <style>
+@media (max-width:575px) {
+    .bookCall {
+        position: fixed;
+        bottom: 18px;
+        left: 20px;
+        width: 90%;
+        background-color: #2d2d2d;
+        z-index: 5;
+    }
+    .bookCall:hover {
+        background-color: #2d2d2d !important;
+    }
+}
 .appoint-box {
     border: 1px solid #fff;
     text-align: center;

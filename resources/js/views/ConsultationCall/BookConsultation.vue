@@ -323,7 +323,16 @@ export default {
                 touchThreshold: 3,
                 arrows: true,
                 nav: true,
-                swipeToSlide: true
+                swipeToSlide: true,
+                responsive: [
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
             }
         };
     }
