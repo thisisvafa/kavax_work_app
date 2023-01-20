@@ -22,10 +22,10 @@ class GetUserController extends Controller
     public function getUser(Request $request)
     {
 
-        dd($this->guard()->user()->id);
-//        $user = request()->user();
-        $user = Auth::guard();
-        dd($user);
+//        dd($this->guard()->user()->id);
+////        $user = request()->user();
+//        $user = Auth::guard();
+//        dd($user);
 //        $user = Auth::user();
 //        $id = auth()->user();
 //        dd($user);
@@ -34,9 +34,9 @@ class GetUserController extends Controller
 //        if ($user == null) {
 //            $user = 'null';
 //        }
-        return response()->json([
-            'status' => '200',
-            'user' => $user
-        ], 200);
+//        return response()->json([
+//            'status' => '200',
+//            'user' => $user
+//        ], 200);
     }
 }
