@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Model\MailSetting;
 use Illuminate\Http\Request;
 use App\Models\Collaborator;
 use App\Models\Message;
@@ -101,6 +102,21 @@ class ProjectController extends Controller
             ));
         }
         catch(\Exception $e){
+            // Never reached
+        }
+
+        try{
+            $findEmail = MailSetting::first();
+            Mail::to($findEmail->mail_to)->send(new SendMail(
+                "Hello Team",
+                "Glad to inform you that $findUser->fullName has chosen our service",
+                "For $rawData".
+                "Login here for more information: <br/>" .
+                "https://www.kavax.co.uk/<br/><br/>" .
+                "Best regards,<br/>" .
+                "Kavax Family"
+            ));
+        } catch(\Exception $e){
             // Never reached
         }
 
