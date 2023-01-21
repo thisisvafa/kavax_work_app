@@ -85,7 +85,20 @@ class SupportController extends Controller
             // Never reached
         }
 
-
+        try{
+            $findEmail = MailSetting::first();
+            Mail::to($findEmail->mail_to)->send(new SendMail(
+                "Hello Team",
+                "We have just received a support ticket from $findUser->fullName",
+                "For $data->id".
+                "Login here for more information: <br/>" .
+                "https://www.kavax.co.uk/<br/><br/>" .
+                "Best regards,<br/>" .
+                "Kavax Family"
+            ));
+        } catch(\Exception $e){
+            // Never reached
+        }
 
         return true;
     }
