@@ -52,13 +52,9 @@ class UserController extends Controller
                 " Team",
                 "New Client Registration",
                 "Glad to inform you that $user->fullName has registered with us." .
-
                 "Login here for more information: <br/>" .
-
                 "https://www.kavax.co.uk/<br/><br/>" .
-
                 "Best regards,<br/>" .
-
                 "Kavax Family"
             ));
         }
